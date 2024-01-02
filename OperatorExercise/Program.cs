@@ -4,26 +4,26 @@
     {
         static void Main(string[] args)
         {
-                //int a = 17;
-                //int b = 4;
+            int a = 17;
+            int b = 4;
 
-                //var sum = a + b;
+            var sum = a + b;
 
-                //var sub = a - b;
+            var sub = a - b;
 
-                //var mult = a * b;
+            var mult = a * b;
 
-                //int quotient = a / b;
-                //int remainder = a % b;
+            var quotient = a / b;
+            var remainder = a % b;
             
-                //Console.WriteLine($"{a}+{b}={sum}, {a}-{b}={sub}, {a}*{b}={mult}, {a}/{b} is {quotient} remainder {remainder}");
+            Console.WriteLine($"{a}+{b}={sum}, {a}-{b}={sub}, {a}*{b}={mult}, {a}/{b} is {quotient} remainder {remainder}");
 
             Console.WriteLine("Enter the radius of your circle");
             var userInput = Console.ReadLine();
 
             double radius = double.Parse(userInput);
 
-            AreaOfCircle(radius);
+            Console.WriteLine(AreaOfCircle(radius));
         }
         public static double AreaOfCircle(double radius)
         {
